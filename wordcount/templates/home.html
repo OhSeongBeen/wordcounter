@@ -1,9 +1,24 @@
-<h1>안녕하세요, 여기에서 글자를 세세요!</h1>
-
-<a href="{%url 'about'%}">ABOUT</a>
-
-<form action="{%url 'result'%}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!">
-</form>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+            <h1 class="display-4">안녕하세요, 여기에서 글자를 세세요!</h1>
+            <a class="lead" href="{%url 'about'%}">ABOUT</a>
+        
+            <form action="{%url 'result'%}">
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="40" rows="10" name="fulltext"></textarea>
+                </div>
+                <hr class="my-4">
+                <input type="submit" class="btn btn-info" value="Count!">
+        
+            </form>
+    </div>
+    
+</body>
